@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra a temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">Clima</a> <!-- Class criada para dar uma informação sobre oq é a pagina-->
+        </nav>
+    </header>
+    <main></main>
+<div class="espaco"></div><!-- Dar um espaço para melhor visualização da pagina-->
+
+    <h1>Digite a localização</h1>
+
+
+    <form class="busca"> <!--Formulario feito para coletar dados que sera trabalhado em java -->
+        <input type="search" id="searchInput" />
+        <button>Buscar</button>
+    </form>
+
+    <div class="resultado">
+        <div class="titulo">--</div>
+
+        <div class="info"> <!--Criada para mostrar as informações  de Temperatura e a velocidade do Vento-->
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso"></div> <!-- Criada para dar um aviso caso o usuario digite algo que não faça parte do banco de dados-->
+
+
+
+    <script src="script.js"></script> <!-- Referência a o script escrito em java ( Sem ele não funcionaria o script )-->
+</body>
+<footer>
+    <p></p>
+</footer>
+</html>
